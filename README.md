@@ -1,3 +1,5 @@
+link repositorio: https://github.com/luciacantos/segundo_reto
+
 ## A. Dos envases
 ### Problema
 Tienes dos recipientes con agua. El primer recipiente contiene a litros de agua, y el segundo
