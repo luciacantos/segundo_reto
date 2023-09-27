@@ -1,0 +1,30 @@
+def function(n,a,q,notices):
+    online = a
+    min_online = a
+    max_online = a
+
+    for notice in notices:
+        if notice == "+":
+            online += 1
+            max_online = max(max_online, online)
+        else:
+            online -= 1
+            min_online = min(min_online, online)
+
+    if min_online <= 0 and max_online >= n:
+        return "YES"
+    elif min_online > 0 and max_online >= n:
+        return "MAYBE"
+    else:
+        return "NO"
+
+def main():
+    t = int(input())
+    for _ in range(t):
+        n,a,q = map(int, input().split())
+        notices = input()
+        result = function(n,a,q,notices)
+        print(result)
+
+if __name__ == "__main__":
+    main()
